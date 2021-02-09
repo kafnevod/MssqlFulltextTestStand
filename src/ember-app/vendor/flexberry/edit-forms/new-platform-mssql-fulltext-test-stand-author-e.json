@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Author",
+  "name": "NewPlatformMssqlFulltextTestStandAuthorE",
+  "className": "AuthorE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-author",
+      "modelProjection": "AuthorE"
+    }
+  ]
+}

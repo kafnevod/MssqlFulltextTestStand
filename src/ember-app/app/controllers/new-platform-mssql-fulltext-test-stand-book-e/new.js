@@ -1,0 +1,4 @@
+import NewPlatformMssqlFulltextTestStandBookEController from '../new-platform-mssql-fulltext-test-stand-book-e';
+
+var NewPlatformMssqlFulltextTestStandBookENewController = NewPlatformMssqlFulltextTestStandBookEController;
+export default NewPlatformMssqlFulltextTestStandBookENewController;

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Language",
+  "name": "NewPlatformMssqlFulltextTestStandLanguageE",
+  "className": "LanguageE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-language",
+      "modelProjection": "LanguageE"
+    }
+  ]
+}

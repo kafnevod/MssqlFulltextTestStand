@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-mssql-fulltext-test-stand-country-e",
+  "editForm": "new-platform-mssql-fulltext-test-stand-country-e",
+  "external": false,
+  "caption": "Country",
+  "name": "NewPlatformMssqlFulltextTestStandCountryL",
+  "className": "CountryL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-country",
+      "modelProjection": "CountryL"
+    }
+  ]
+}

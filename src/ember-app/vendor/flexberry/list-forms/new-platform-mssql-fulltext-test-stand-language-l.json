@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-mssql-fulltext-test-stand-language-e",
+  "editForm": "new-platform-mssql-fulltext-test-stand-language-e",
+  "external": false,
+  "caption": "Language",
+  "name": "NewPlatformMssqlFulltextTestStandLanguageL",
+  "className": "LanguageL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-language",
+      "modelProjection": "LanguageL"
+    }
+  ]
+}

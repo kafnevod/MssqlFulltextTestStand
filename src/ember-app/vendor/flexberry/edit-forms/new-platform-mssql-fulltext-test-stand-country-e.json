@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Country",
+  "name": "NewPlatformMssqlFulltextTestStandCountryE",
+  "className": "CountryE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-country",
+      "modelProjection": "CountryE"
+    }
+  ]
+}

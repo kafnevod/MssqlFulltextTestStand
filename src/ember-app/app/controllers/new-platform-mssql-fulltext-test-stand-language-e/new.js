@@ -1,0 +1,4 @@
+import NewPlatformMssqlFulltextTestStandLanguageEController from '../new-platform-mssql-fulltext-test-stand-language-e';
+
+var NewPlatformMssqlFulltextTestStandLanguageENewController = NewPlatformMssqlFulltextTestStandLanguageEController;
+export default NewPlatformMssqlFulltextTestStandLanguageENewController;

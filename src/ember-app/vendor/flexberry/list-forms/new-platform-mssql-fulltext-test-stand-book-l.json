@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-mssql-fulltext-test-stand-book-e",
+  "editForm": "new-platform-mssql-fulltext-test-stand-book-e",
+  "external": false,
+  "caption": "Book",
+  "name": "NewPlatformMssqlFulltextTestStandBookL",
+  "className": "BookL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-book",
+      "modelProjection": "BookL"
+    }
+  ]
+}

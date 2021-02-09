@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-mssql-fulltext-test-stand-author-e",
+  "editForm": "new-platform-mssql-fulltext-test-stand-author-e",
+  "external": false,
+  "caption": "Author",
+  "name": "NewPlatformMssqlFulltextTestStandAuthorL",
+  "className": "AuthorL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-mssql-fulltext-test-stand-author",
+      "modelProjection": "AuthorL"
+    }
+  ]
+}

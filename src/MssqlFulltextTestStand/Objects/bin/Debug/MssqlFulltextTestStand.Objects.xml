@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MssqlFulltextTestStand.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Country">
+            <summary>
+            Country.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Country.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Country.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Country.Views.CountryE">
+            <summary>
+            "CountryE" view.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Country.Views.CountryL">
+            <summary>
+            "CountryL" view.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Book">
+            <summary>
+            Book.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Capacity">
+            <summary>
+            Capacity.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Annotation">
+            <summary>
+            Annotation.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Agenda">
+            <summary>
+            Agenda.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.PicturesAuthor">
+            <summary>
+            PicturesAuthor.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Reaction">
+            <summary>
+            Reaction.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Copyright">
+            <summary>
+            Copyright.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.LibraryCode">
+            <summary>
+            LibraryCode.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Tags">
+            <summary>
+            Tags.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Theme">
+            <summary>
+            Theme.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Topic">
+            <summary>
+            Topic.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Corrector">
+            <summary>
+            Corrector.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Format">
+            <summary>
+            Format.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Font">
+            <summary>
+            Font.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.PublishDate">
+            <summary>
+            PublishDate.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Bestseller">
+            <summary>
+            Bestseller.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Language">
+            <summary>
+            Book.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Author">
+            <summary>
+            Book.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Country">
+            <summary>
+            Book.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Book.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Views.BookE">
+            <summary>
+            "BookE" view.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Book.Views.BookL">
+            <summary>
+            "BookL" view.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Author">
+            <summary>
+            Author.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Author.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Author.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Author.Views.AuthorE">
+            <summary>
+            "AuthorE" view.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Author.Views.AuthorL">
+            <summary>
+            "AuthorL" view.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Language">
+            <summary>
+            Language.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Language.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:NewPlatform.MssqlFulltextTestStand.Language.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Language.Views.LanguageE">
+            <summary>
+            "LanguageE" view.
+            </summary>
+        </member>
+        <member name="P:NewPlatform.MssqlFulltextTestStand.Language.Views.LanguageL">
+            <summary>
+            "LanguageL" view.
+            </summary>
+        </member>
+    </members>
+</doc>
