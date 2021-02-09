@@ -1,4 +1,3 @@
-/home/runner/work/MssqlFulltextTestStand/MssqlFulltextTestStand/src/MssqlFulltextTestStand/Objects/bin/Debug//MssqlFulltextTestStand.Objects.xml
 /home/runner/work/MssqlFulltextTestStand/MssqlFulltextTestStand/src/MssqlFulltextTestStand/Objects/bin/Debug/MssqlFulltextTestStand.Objects.dll
 /home/runner/work/MssqlFulltextTestStand/MssqlFulltextTestStand/src/MssqlFulltextTestStand/Objects/bin/Debug/MssqlFulltextTestStand.Objects.pdb
 /home/runner/work/MssqlFulltextTestStand/MssqlFulltextTestStand/src/MssqlFulltextTestStand/Objects/bin/Debug/MssqlFulltextTestStand.Objects.xml
