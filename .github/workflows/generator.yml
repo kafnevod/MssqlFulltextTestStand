@@ -90,7 +90,7 @@ jobs:
           ember build -e gh-pages
 
           BRANCH=$(git branch -l gh-pages)
-          if [ $BRANCH != "gh-pages" ]
+          if [ "$BRANCH" != "gh-pages" ]
           then
             git checkout --orphan gh-pages
           else
