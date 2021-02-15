@@ -86,28 +86,29 @@ jobs:
         run: |
           set -x
 
-          cd "./src/ember-app"
-          ember build -e gh-pages
-
-          BRANCH=$(git branch -l gh-pages)
-          if [ "$BRANCH" != "gh-pages" ]
+          GHPAGES = $(jq '.GenerationItems.Frontend.EmberJs.GhPagesPush' ./GenConfig.fdg)
+          if [ "$GHPAGES" = "true" ]
           then
+            cd "./src/ember-app"
+            ember build -e gh-pages
+
+            BRANCH=$(git branch -l gh-pages)
+            if [ "$BRANCH" = "gh-pages" ]
+            then
+              git branch -d gh-pages
+            fi
+
             git checkout --orphan gh-pages
-          else
-            git checkout gh-pages
+
+            git --work-tree ./dist add --all
+            git --work-tree ./dist commit -m "Deploy to GitHub Pages"
+            git push -f origin gh-pages
+
+            git checkout main
+            cd ../..
+
+            echo "Successfully deployed"
           fi
-
-          # Delete all files except ./dist, cope dist in root and delete root.
-          ls | grep -v dist | xargs rm -rfv
-          cp -r dist/* .
-          rm -rf ./dist
-
-          git add *
-          git commit -m "Deploy to GitHub Pages"
-          git push origin gh-pages
-
-          git checkout main
-          cd ../..
       - name: Cleanup
         if: always()
         run: |
