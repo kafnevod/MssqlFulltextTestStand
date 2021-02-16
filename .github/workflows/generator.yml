@@ -90,8 +90,8 @@ jobs:
           if [ "$GHPAGES" ]
           then
 
-            SSH_AUTH_SOCK=/tmp/ssh_agent.sock
-            export SSH_AUTH_SOCK;
+            # SSH_AUTH_SOCK=/tmp/ssh_agent.sock
+            # export SSH_AUTH_SOCK;
 
             cd "./src/ember-app"
             ember build -e gh-pages
@@ -106,11 +106,9 @@ jobs:
 
             git --work-tree ./dist add --all
             git --work-tree ./dist commit -m "Deploy to GitHub Pages"
-            # git push --force --quiet origin gh-pages
 
             git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" gh-pages > /dev/null 2>&1
 
-            git checkout main
             cd ../..
 
             echo "Successfully deployed"
