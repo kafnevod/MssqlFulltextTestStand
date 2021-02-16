@@ -86,7 +86,7 @@ jobs:
         run: |
           set -x
 
-          GHPAGES = $(jq '.GenerationItems.Frontend.EmberJs.GhPagesPush' ./GenConfig.fdg)
+          GHPAGES=$(jq '.GenerationItems.Frontend.EmberJs.GhPagesPush' ./GenConfig.fdg)
           if [ "$GHPAGES" ]
           then
             cd "./src/ember-app"
