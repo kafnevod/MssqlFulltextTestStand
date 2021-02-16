@@ -89,6 +89,10 @@ jobs:
           GHPAGES=$(jq '.GenerationItems.Frontend.EmberJs.GhPagesPush' ./GenConfig.fdg)
           if [ "$GHPAGES" ]
           then
+
+            SSH_AUTH_SOCK=/tmp/ssh_agent.sock
+            export SSH_AUTH_SOCK;
+
             cd "./src/ember-app"
             ember build -e gh-pages
 
