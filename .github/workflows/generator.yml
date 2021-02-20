@@ -70,41 +70,12 @@ jobs:
           git config user.name "Flexberry-man"
           git config user.email "mail@flexberry.net"
 
-
-
-              # Update environment.
-              ifs=$IFS
-              IFS=
-              find=
-              while read str
-              do
-               case $str in
-                *if*environment*===*gh-pages*) find=1;;
-                *)
-                  if [ -n "$find" ]
-                  then
-                    case $str in
-                      *}*)
-                        find=
-                        echo  "
-          if (environment === 'gh-pages') {
-            // For git-pages ENV rootUrl setting.
-            ENV.rootURL = '/${GITHUB_REPOSITORY}/';
-            ENV.locationType = 'hash';
-          }"
-                      ;;
-                    esac
-                  else
-                    echo $str
-                  fi
-               esac
-              done < ./src/ember-app/config/environment.js > ./src/ember-app/config/new_environment.js
-              IFS=$ifs
-
-              mv ./src/ember-app/config/new_environment.js ./src/ember-app/config/environment.js
-
-          git add --all
-          git commit -m "Flexberry code generation"
+          STATUS=$(git diff)
+          if [ "$STATUS" != "" ]
+          then
+            git add --all
+            git commit -m "Flexberry code generation"
+          fi
 
       - name: Git push
         run: |
@@ -129,8 +100,8 @@ jobs:
 
               cd "./src/ember-app"
 
-              IFS='/' read -ra repository_array <<<"${GITHUB_REPOSITORY}";
-              repository_name="${repository_array[@]:1}"
+              IFS='/' read -ra REPOSITORY_ARRAY <<<"${GITHUB_REPOSITORY}";
+              REPOSITORY_NAME="${REPOSITORY_ARRAY[@]:1}"
 
               # Update environment.
               ifs=$IFS
@@ -149,7 +120,7 @@ jobs:
                         echo  "
                           if (environment === 'gh-pages') {
                             // For git-pages ENV rootUrl setting.
-                            ENV.rootURL = '/${repository_name}/';
+                            ENV.rootURL = '/${REPOSITORY_NAME}/';
                             ENV.locationType = 'hash';
                           }"
                       ;;
