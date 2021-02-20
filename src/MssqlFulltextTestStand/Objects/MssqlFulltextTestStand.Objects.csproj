@@ -38,65 +38,65 @@
     <Reference Include="System.Xml">
       <HintPath>System.Xml.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/log4net.2.0.11/lib/net45/log4net">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/log4net.2.0.11/lib/net45/log4net.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/log4net.2.0.11/lib/net45/log4net">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/log4net.2.0.11/lib/net45/log4net.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.LogService.2.0.0-beta03/lib/net45/NewPlatform.Flexberry.LogService">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.LogService.2.0.0-beta03/lib/net45/NewPlatform.Flexberry.LogService.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.LogService.2.0.0-beta03/lib/net45/NewPlatform.Flexberry.LogService">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.LogService.2.0.0-beta03/lib/net45/NewPlatform.Flexberry.LogService.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Microsoft.Spatial.7.7.2/lib/net45/Microsoft.Spatial">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Microsoft.Spatial.7.7.2/lib/net45/Microsoft.Spatial.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Microsoft.Spatial.7.7.2/lib/net45/Microsoft.Spatial">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Microsoft.Spatial.7.7.2/lib/net45/Microsoft.Spatial.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Remotion.Linq.2.2.0/lib/net45/Remotion.Linq">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Remotion.Linq.2.2.0/lib/net45/Remotion.Linq.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Remotion.Linq.2.2.0/lib/net45/Remotion.Linq">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Remotion.Linq.2.2.0/lib/net45/Remotion.Linq.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/SharpZipLib.1.2.0/lib/net45/ICSharpCode.SharpZipLib">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/SharpZipLib.1.2.0/lib/net45/ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/SharpZipLib.1.2.0/lib/net45/ICSharpCode.SharpZipLib">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/SharpZipLib.1.2.0/lib/net45/ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/System.Threading.Tasks.Extensions.4.5.2/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/System.Threading.Tasks.Extensions.4.5.2/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/System.Threading.Tasks.Extensions.4.5.2/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/System.Threading.Tasks.Extensions.4.5.2/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Abstractions.5.11.6/lib/net45/Unity.Abstractions">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Abstractions.5.11.6/lib/net45/Unity.Abstractions.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Abstractions.5.11.6/lib/net45/Unity.Abstractions">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Abstractions.5.11.6/lib/net45/Unity.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Container.5.11.8/lib/net45/Unity.Container">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Container.5.11.8/lib/net45/Unity.Container.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Container.5.11.8/lib/net45/Unity.Container">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Container.5.11.8/lib/net45/Unity.Container.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Configuration.5.11.2/lib/net45/Unity.Configuration">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Configuration.5.11.2/lib/net45/Unity.Configuration.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Configuration.5.11.2/lib/net45/Unity.Configuration">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/Unity.Configuration.5.11.2/lib/net45/Unity.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.ExternalLangDef">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.ExternalLangDef.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.ExternalLangDef">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.ExternalLangDef.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LINQProvider">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LINQProvider.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LINQProvider">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LINQProvider.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LockService">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LockService.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LockService">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Business.LockService.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Collections">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Collections.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Collections">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.DataObject">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.DataObject.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.DataObject">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.DataObject.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.FunctionalLanguage">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.FunctionalLanguage">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Tools">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Tools.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Tools">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.Tools.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.UserDataTypes">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.UserDataTypes.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.UserDataTypes">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/ICSSoft.STORMNET.UserDataTypes.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.CurrentUserService">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.CurrentUserService.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.CurrentUserService">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.CurrentUserService.dll</HintPath>
     </Reference>
-    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.UnityFactory">
-      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha09/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.UnityFactory.dll</HintPath>
+    <Reference Include="../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.UnityFactory">
+      <HintPath>../../../gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/../../../src/MssqlFulltextTestStand/packages/NewPlatform.Flexberry.ORM.6.0.0-beta16/lib/net45/NewPlatform.Flexberry.ORM.UnityFactory.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
