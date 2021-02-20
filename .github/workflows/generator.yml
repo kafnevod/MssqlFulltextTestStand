@@ -70,8 +70,41 @@ jobs:
           git config user.name "Flexberry-man"
           git config user.email "mail@flexberry.net"
 
-          # git add --all
-          # git commit -m "Flexberry code generation"
+
+
+              # Update environment.
+              ifs=$IFS
+              IFS=
+              find=
+              while read str
+              do
+               case $str in
+                *if*environment*===*gh-pages*) find=1;;
+                *)
+                  if [ -n "$find" ]
+                  then
+                    case $str in
+                      *}*)
+                        find=
+                        echo  "
+                          if (environment === 'gh-pages') {
+                            // For git-pages ENV rootUrl setting.
+                            ENV.rootURL = '/${GITHUB_REPOSITORY}/';
+                            ENV.locationType = 'hash';
+                          }"
+                      ;;
+                    esac
+                  else
+                    echo $str
+                  fi
+               esac
+              done < ./src/ember-app/config/environment.js > ./src/ember-app/config/new_environment.js
+              IFS=$ifs
+
+              mv ./src/ember-app/config/new_environment.js ./src/ember-app/config/environment.js
+
+          git add --all
+          git commit -m "Flexberry code generation"
 
       - name: Git push
         run: |
@@ -79,7 +112,7 @@ jobs:
           SSH_AUTH_SOCK=/tmp/ssh_agent.sock
           export SSH_AUTH_SOCK;
           # Redirect any output to /dev/null to hide any sensitive credential data that might otherwise be exposed.
-          # git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" > /dev/null 2>&1
+          git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" > /dev/null 2>&1
           echo "Done."
 
       - name: Git gh-pages
@@ -144,8 +177,6 @@ jobs:
               git --work-tree ./dist commit -m "Deploy to GitHub Pages"
               git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" gh-pages > /dev/null 2>&1
 
-              git checkout -- *
-              git checkout main
               cd ../..
 
               echo "Successfully deployed"
