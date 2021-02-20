@@ -192,11 +192,12 @@ module.exports = function(environment) {
   }
 
 
-                if (environment === 'gh-pages') {
-                  // For git-pages ENV rootUrl setting.
-                  ENV.rootURL = '/Flexberry/MssqlFulltextTestStand/';
-                  ENV.locationType = 'hash';
-                }
+
+if (environment === 'gh-pages') {
+  // For git-pages ENV rootUrl setting.
+  ENV.rootURL = '/Flexberry/MssqlFulltextTestStand/';
+  ENV.locationType = 'hash';
+}
 
   return ENV;
 };
