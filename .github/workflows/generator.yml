@@ -87,11 +87,11 @@ jobs:
                       *}*)
                         find=
                         echo  "
-                          if (environment === 'gh-pages') {
-                            // For git-pages ENV rootUrl setting.
-                            ENV.rootURL = '/${GITHUB_REPOSITORY}/';
-                            ENV.locationType = 'hash';
-                          }"
+          if (environment === 'gh-pages') {
+            // For git-pages ENV rootUrl setting.
+            ENV.rootURL = '/${GITHUB_REPOSITORY}/';
+            ENV.locationType = 'hash';
+          }"
                       ;;
                     esac
                   else
@@ -129,6 +129,9 @@ jobs:
 
               cd "./src/ember-app"
 
+              IFS='/' read -ra repository_array <<<"${GITHUB_REPOSITORY}";
+              repository_name="${repository_array[@]:1}"
+
               # Update environment.
               ifs=$IFS
               IFS=
@@ -146,7 +149,7 @@ jobs:
                         echo  "
                           if (environment === 'gh-pages') {
                             // For git-pages ENV rootUrl setting.
-                            ENV.rootURL = '/${GITHUB_REPOSITORY}/';
+                            ENV.rootURL = '/${repository_name}/';
                             ENV.locationType = 'hash';
                           }"
                       ;;
