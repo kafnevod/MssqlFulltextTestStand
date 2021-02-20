@@ -122,10 +122,10 @@ jobs:
                     echo $str
                   fi
                esac
-              done < ./config/environment.js > ./config/new_ environment.js
+              done < ./config/environment.js > ./config/new_environment.js
               IFS=$ifs
 
-              mv ./config/new_ environment.js ./config/environment.js
+              mv ./config/new_environment.js ./config/environment.js
 
               # Create offline
               ember generate flexberry-application-offline app --enable-offline --metadata-dir=./vendor/flexberry --skip-confirmation
