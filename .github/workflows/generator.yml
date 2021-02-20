@@ -89,7 +89,7 @@ jobs:
           GHPAGES=$(jq '.GenerationItems.Frontend.EmberJs.GhPagesPush' ./GenConfig.fdg)
           if [ "$GHPAGES" ]
           then
-            if [ -f ./src/ember-app/config/environment.js ]
+            if [ -f "./src/ember-app/config/environment.js" ]
             then
               SSH_AUTH_SOCK=/tmp/ssh_agent.sock
               export SSH_AUTH_SOCK;
@@ -122,13 +122,13 @@ jobs:
                     echo $str
                   fi
                esac
-              done < /config/environment.js > /config/new_ environment.js
+              done < ./config/environment.js > ./config/new_ environment.js
               IFS=$ifs
 
-              mv /config/new_ environment.js /config/environment.js
+              mv ./config/new_ environment.js ./config/environment.js
 
               # Create offline
-              ember generate flexberry-application-offline app --enable-offline --metadata-dir=vendor/flexberry --skip-confirmation
+              ember generate flexberry-application-offline app --enable-offline --metadata-dir=./vendor/flexberry --skip-confirmation
 
               ember build -e gh-pages
 
