@@ -36,7 +36,7 @@ jobs:
           npm install -g ember-cli@3.1.4
 
       - name: Install NewPlatform.Flexberry.Designer.CommandLine
-        run: nuget install NewPlatform.Flexberry.Designer.CommandLine -Version 0.1.0-alpha08 -OutputDirectory gen
+        run: nuget install NewPlatform.Flexberry.Designer.CommandLine -Version 0.1.0-alpha07 -OutputDirectory gen
 
       - name: Starting X virtual framebuffer (Xvfb) in background
         run: Xvfb -ac :99 -screen 0 1280x1024x16 &
@@ -45,7 +45,7 @@ jobs:
         run: |
           export DISPLAY=:99
           export SSH_ASKPASS=1
-          mono ./gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha08/tools/flexberry.exe ./GenConfig.fdg
+          mono ./gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha07/tools/flexberry.exe ./GenConfig.fdg
 
       - name: Tune ssh-keys
         env:
@@ -70,8 +70,8 @@ jobs:
           git config user.name "Flexberry-man"
           git config user.email "mail@flexberry.net"
 
-          # git add --all
-          # git commit -m "Flexberry code generation"
+          git add --all
+          git commit -m "Flexberry code generation"
 
       - name: Git push
         run: |
@@ -79,7 +79,7 @@ jobs:
           SSH_AUTH_SOCK=/tmp/ssh_agent.sock
           export SSH_AUTH_SOCK;
           # Redirect any output to /dev/null to hide any sensitive credential data that might otherwise be exposed.
-          # git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" > /dev/null 2>&1
+          git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" > /dev/null 2>&1
           echo "Done."
 
       - name: Git gh-pages
@@ -89,29 +89,69 @@ jobs:
           GHPAGES=$(jq '.GenerationItems.Frontend.EmberJs.GhPagesPush' ./GenConfig.fdg)
           if [ "$GHPAGES" ]
           then
-
-            # SSH_AUTH_SOCK=/tmp/ssh_agent.sock
-            # export SSH_AUTH_SOCK;
-
-            cd "./src/ember-app"
-            ember build -e gh-pages
-
-            BRANCH=$(git branch -l gh-pages)
-            if [ "$BRANCH" = "gh-pages" ]
+            if [ -f ./src/ember-app/config/environment.js ]
             then
-              git branch -d gh-pages
+              SSH_AUTH_SOCK=/tmp/ssh_agent.sock
+              export SSH_AUTH_SOCK;
+
+              cd "./src/ember-app"
+
+              # Update environment.
+              ifs=$IFS
+              IFS=
+              find=
+              while read str
+              do
+               case $str in
+                *if*environment*===*gh-pages*) find=1;;
+                *)
+                  if [ -n "$find" ]
+                  then
+                    case $str in
+                      *}*)
+                        find=
+                        echo  "
+                          if (environment === 'gh-pages') {
+                            // For git-pages ENV rootUrl setting.
+                            ENV.rootURL = '/${GITHUB_REPOSITORY}/';
+                            ENV.locationType = 'hash';
+                          }"
+                      ;;
+                    esac
+                  else
+                    echo $str
+                  fi
+               esac
+              done < /config/environment.js > /config/new_ environment.js
+              IFS=$ifs
+
+              mv /config/new_ environment.js /config/environment.js
+
+              # Create offline
+              ember generate flexberry-application-offline app --enable-offline --metadata-dir=vendor/flexberry --skip-confirmation
+
+              ember build -e gh-pages
+
+              BRANCH=$(git branch -l gh-pages)
+              if [ "$BRANCH" = "gh-pages" ]
+              then
+                git branch -d gh-pages
+              fi
+
+              git checkout --orphan gh-pages
+
+              git --work-tree ./dist add --all
+              git --work-tree ./dist commit -m "Deploy to GitHub Pages"
+              git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" gh-pages > /dev/null 2>&1
+
+              git checkout -- *
+              git checkout main
+              cd ../..
+
+              echo "Successfully deployed"
+            else
+               echo "File environment.js does not exist."
             fi
-
-            git checkout --orphan gh-pages
-
-            git --work-tree ./dist add --all
-            git --work-tree ./dist commit -m "Deploy to GitHub Pages"
-
-            git push --force --quiet "git@github.com:${GITHUB_REPOSITORY}.git" gh-pages > /dev/null 2>&1
-
-            cd ../..
-
-            echo "Successfully deployed"
           fi
       - name: Cleanup
         if: always()
