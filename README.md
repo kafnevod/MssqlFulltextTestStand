@@ -2,6 +2,6 @@
 
 # Application
 
-<iframe src="https://flexberry.github.io/MssqlFulltextTestStand/"></iframe>
+See: https://flexberry.github.io/MssqlFulltextTestStand/
 
 # Diagrams
