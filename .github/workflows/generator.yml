@@ -45,6 +45,8 @@ jobs:
         run: |
           export DISPLAY=:99
           export SSH_ASKPASS=1
+          pwd
+          ls -lR
           mono ./gen/NewPlatform.Flexberry.Designer.CommandLine.0.1.0-alpha06/tools/flexberry.exe ./GenConfig.fdg
 
       - name: Tune ssh-keys
