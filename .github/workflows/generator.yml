@@ -66,10 +66,11 @@ jobs:
           git config user.name "Flexberry-man"
           git config user.email "mail@flexberry.net"
 
+          git add --all
+          
           STATUS=$(git diff)
           if [ "$STATUS" != "" ]
           then
-            git add --all
             git commit -m "Flexberry code generation"
           fi
 
