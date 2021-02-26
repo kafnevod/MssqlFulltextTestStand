@@ -54,11 +54,11 @@ services:
   app:
     image: $appImageName
     links:
-      - db:db
+      - app-postgres-db:app-postgres-db
     ports:
       - 80:80
 
-  db:
+  app-postgres-db:
     image: $dbImageName
     volumes:
       - DB:$DBPath

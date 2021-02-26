@@ -8,6 +8,9 @@ module.exports = function(environment) {
     // Use `ember s -e development-loc` command for local backend usage.
     backendUrl = 'http://localhost:6500';
   }
+  if (environment === 'docker') {
+    backendUrl = '';
+  }
 
 
   let ENV = {

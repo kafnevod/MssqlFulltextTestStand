@@ -20,17 +20,18 @@ RUN \
 RUN \
   set -x; \
   cd /src/ember-app/; \
-  ember build --environment=docker
+  ember build --environment=docker; \
+  cp /src/MssqlFulltextTestStand/ODataBackend/Web.config /src/ember-app/dist
 
 
-#FROM mono:latest as backend
+FROM mono:latest as backend
 
-#COPY /src  /src
+COPY /src  /src
 
-# RUN \
-#  cd ;\
-#  nuget restore MssqlFulltextTestStand.sln; \
-#  msbuild /p:Configuration=Release MssqlFulltextTestStand.sln
+RUN \
+ cd /src/MssqlFulltextTestStand ;\
+ nuget restore MssqlFulltextTestStand.sln; \
+ msbuild /p:Configuration=Release MssqlFulltextTestStand.sln
 
 
 
@@ -38,6 +39,7 @@ FROM flexberry/alt.p8-apache2-mono:latest
 
 MAINTAINER mail@flexberry.net
 
-#COPY --from=backend /Flexberry/NewPlatform.Flexberry.ServiceBus.Editor/ODataBackend /var/www/vhosts/project
+COPY --from=backend /src/MssqlFulltextTestStand/Objects/bin/Release/ /var/www/vhosts/project/odata/
+# COPY --from=backend /src/MssqlFulltextTestStand/Objects/bin/Release/ /var/www/vhosts/project/bin/
 COPY --from=ember_app /src/ember-app/dist /var/www/vhosts/project
 COPY vhosts.conf /conf
